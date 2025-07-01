@@ -9,6 +9,7 @@ public class App {
         runTreeHashSet(sets);
         runTreeHashSet(sets);
         runTreeHashSetwithCode(sets);
+        runTreeHashSetwithCodeTwo(sets);
         
         
     }
@@ -40,7 +41,7 @@ public class App {
     public static void runTreeHashSetwithCodeTwo(Sets sets){
         System.out.println("----------------Tresset con comparator-----------");
         System.out.println("ELEMENTOS DEL treeset (ordenados por longitud y luego alfabeticamente)");
-        sets.construirTreeSetConComparador();
+        sets.construirTreeSetConComparadorTwo();
     }
 
     

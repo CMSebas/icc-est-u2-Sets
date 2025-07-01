@@ -68,17 +68,17 @@ public class Sets {
         @Override
         public int compare(String s1, String s2) {
             
-            int result = Integer.compare(s1.length(), s2.length());
-           if (result == 0) {
-                // Si tienen la misma longitud, comparar alfabéticamente
-                return s1.compareTo(s2);
-            }
-            return result;
+            int result = Integer.compare(s2.length(), s1.length()); 
+            if (result == 0) {
+                 return s1.compareTo(s2); 
+                 }
+                 return result;
         }
     };
     
-    
-        Set<String> palabrasTreSetCompare = new TreeSet<>(miComparator);        palabrasTreSetCompare.add("Laptop");
+        
+        Set<String> palabrasTreSetCompare = new TreeSet<>(miComparator);       
+        palabrasTreSetCompare.add("Laptop");
         palabrasTreSetCompare.add("Manzana");
         palabrasTreSetCompare.add("Pera");
         palabrasTreSetCompare.add("Celular");
@@ -87,6 +87,34 @@ public class Sets {
         palabrasTreSetCompare.add("Laptop");
 
         for (String palabra:palabrasTreSetCompare){
+            System.out.println(palabra);
+        }
+    }
+
+    public void construirTreeSetConComparadorTwo(){
+        Comparator<String> miComparator2 = new Comparator<String>() {
+        @Override
+         public int compare(String s1, String s2) {
+            int result = Integer.compare(s2.length(), s1.length()); // longitudes de mayor a menor
+            if (result == 0) {
+                return s1.compareTo(s2); // si tienen la misma longitud, ordenar alfabéticamente
+            }
+            return result;
+        }
+    };
+    
+    
+        Set<String> palabrasTreSetCompareTwo = new TreeSet<>(miComparator2);        
+        palabrasTreSetCompareTwo.add("Laptop");
+        palabrasTreSetCompareTwo.add("Manzana");
+        palabrasTreSetCompareTwo.add("Pera");
+        palabrasTreSetCompareTwo.add("Celular");
+        palabrasTreSetCompareTwo.add("Celulas");
+        palabrasTreSetCompareTwo.add("Laptop");
+        palabrasTreSetCompareTwo.add("Pera");
+        palabrasTreSetCompareTwo.add("Laptop");
+
+        for (String palabra:palabrasTreSetCompareTwo){
             System.out.println(palabra);
         }
     }
