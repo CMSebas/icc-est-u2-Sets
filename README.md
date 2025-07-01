@@ -32,5 +32,5 @@ En este ejercicio, se implementa un algoritmo para ordenar elementos en una estr
 ---
 
 ## 🖼 Captura de pantalla
-![alt text](<Captura de pantalla 2025-07-01 090811.png>)
+![alt text](image.png)
 Aquí puedes agregar una captura de pantalla del resultado de la ejecución de los ejercicios:

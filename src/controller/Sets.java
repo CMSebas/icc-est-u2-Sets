@@ -94,13 +94,13 @@ public class Sets {
     public void construirTreeSetConComparadorTwo(){
         Comparator<String> miComparator2 = new Comparator<String>() {
         @Override
-         public int compare(String s1, String s2) {
-            int result = Integer.compare(s2.length(), s1.length()); // longitudes de mayor a menor
-            if (result == 0) {
-                return s1.compareTo(s2); // si tienen la misma longitud, ordenar alfabéticamente
-            }
-            return result;
+        public int compare(String s1, String s2) {
+        int result = Integer.compare(s2.length(), s1.length());
+        if (result == 0) {
+            return s2.compareTo(s1); 
         }
+        return result;
+    }
     };
     
     
