@@ -1,4 +1,6 @@
+import controller.ContactoController;
 import controller.Sets;
+import models.*;
 
 public class App {
     public static void main(String[] args) {
@@ -10,6 +12,8 @@ public class App {
         runTreeHashSet(sets);
         runTreeHashSetwithCode(sets);
         runTreeHashSetwithCodeTwo(sets);
+        ContactoController contactoController=new ContactoController();
+        
         
         
     }
