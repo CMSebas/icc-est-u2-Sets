@@ -1,10 +1,12 @@
 import controller.ContactoController;
+import controller.Ejercicios;
 import controller.Sets;
 import models.*;
 
 public class App {
     public static void main(String[] args) {
         Sets sets=new Sets();
+        Ejercicios ejercicios=new Ejercicios();
 
         runHashSet(sets);
         runLinkedHashSet(sets);
@@ -13,6 +15,7 @@ public class App {
         runTreeHashSetwithCode(sets);
         runTreeHashSetwithCodeTwo(sets);
         ContactoController contactoController=new ContactoController();
+        new Ejercicios();
         
         
         

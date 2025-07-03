@@ -22,15 +22,30 @@ Este proyecto contiene la implementación de algoritmos para trabajar con colecc
 En este ejercicio, se implementa un algoritmo para ordenar elementos en una estructura de tipo Set y manipular la forma en que los elementos se almacenan.
 
 #### *Clases utilizadas*:
-- Sets: Clase principal donde se encuentran los métodos para crear y ordenar los sets.
-  - *Métodos*:
-    - construirHashSet(): Crea un HashSet y muestra los elementos sin orden.
-    - construirLinkedHashSet(): Crea un LinkedHashSet y mantiene el orden de inserción.
-    - construirTreeSet(): Crea un TreeSet y organiza los elementos en orden ascendente.
-    - construirTreeSetConComparador(): Crea un TreeSet con un comparador que permite ordenar los elementos en orden descendente.
+- 📂 Estructura principal:
+Clase App: Ejecuta varios métodos que construyen y muestran los diferentes tipos de Set.
+
+Clase Sets: Contiene la lógica para construir cada conjunto.
+
+Clase ContactoController:
+
+runTreeeContacto(): Usa un TreeSet con un comparador personalizado (ContactoComparator) que ordena por apellido y luego por nombre.
+
+runTreeeContactoInverso(): Usa un TreeSet con otro comparador (ContactoComparatorConNumero) que también considera el número de contacto como criterio de orden.
+
+🔍 Características clave:
+HashSet: No garantiza orden.
+
+LinkedHashSet: Mantiene el orden de inserción.
+
+TreeSet: Ordena automáticamente según el criterio natural o un Comparator definido.
+
+Comparadores personalizados para ordenar objetos Contacto por distintos criterios (apellido, nombre, número).
 
 ---
 
 ## 🖼 Captura de pantalla
 ![alt text](image.png)
-Aquí puedes agregar una captura de pantalla del resultado de la ejecución de los ejercicios:
+Foto 2
+
+![alt text](image-1.png)
